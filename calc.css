@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #18122a;
+}
+
+@media(max-width:768px){
+    div > .form {
+        margin-top: 30%;
+    }
+}
+
+
+header{
+    padding-top: 25px;
+    padding-bottom: 25px ;
+    text-align: center;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.747);
+}
+
+nav{
+    background-color: #E9ECFD;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+  
+    
+}
+
+a{
+    color: #267DCA;
+}
+
+.home{
+    color: black;
+    text-decoration: none;
+}
+
+.home:hover{
+    color: #267DCA;
+}
+
+a:hover{
+   color: black;
+}
+
+
+p{
+
+    color: black;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+.corpo{
+    border-radius: 5px;
+    width: 90%;
+    
+    margin: 0 auto;
+    margin-top: 22px;
+   
+    text-align: center;
+}
+
+.lista-compras{
+    display: grid;
+    justify-content: center;
+    
+}
+
+input [type=number], [type=text]{
+    margin-bottom: 15px;
+    width: 300px;
+    outline: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+input[type=number]{
+   padding: 10px 0;
+}
+
+input[type=button], [type=submit]{
+    margin-top: 15px;
+    border-radius: 80px;
+    outline: 0;
+    background-color:#267DCA ;
+    color: white;
+    padding: 10px;
+}
+
+#limpar{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.lista-cadastrada{
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: #267dcacb;
+   
+}
+
+table{
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.thead{
+   
+    background-color:#267DCA;
+    margin-bottom: 5px;
+    color: white;
+}
+
+th{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.total{
+    color: white;
+    margin-left: 120px;
+    padding-top: 35px;
+    
+}

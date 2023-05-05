@@ -1,0 +1,131 @@
+*{
+    padding: 0 auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+@media(max-width:768px){
+    div > form{
+        margin-top: 12%;
+    }
+
+ 
+}
+
+body{
+    background-color: #18122A;
+}
+
+
+h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.cash-register{
+    width: 5%;
+}
+
+.inputs{
+   
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #231141, #3E3B8C);
+    border-radius: 35px;
+    width: 60%;
+    margin-top: 1.5%;
+    padding-top: 5% ;
+    padding-bottom: 5%;
+}
+
+.cadastro{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.obrigatorio{
+   
+    padding-right: 65%;
+    color: red;
+}
+
+.informacao{
+    background-color: #3A78CB;
+    box-shadow: 5px 5px 0px 0px black;
+    border-radius: 5px;
+    width: 45%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.forte{
+    color: red;
+    font-size: 20px;
+}
+
+
+
+input[type=email]{
+    box-shadow: 5px 5px 0px 0px black;
+   width: 65%;
+   height: 30px;
+   margin-bottom: 10px;
+   border-radius: 200px;
+   outline: 0px;
+}
+
+input[type=password]{
+    box-shadow: 5px 5px 0px 0px black;
+    width: 65%;
+    border-radius: 200px;
+    height: 30px;
+    outline: 0px;
+   
+    margin-bottom: 10px;
+}
+
+.password{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    text-align: center;
+}
+    button, input[type=button]{
+    box-shadow: 5px 5px 0px 0px black;
+    border: 1px solid white;
+    width: 150px;
+    font-size: 18px;
+    height: 30px;
+   
+    margin-top: 20px;
+    border-radius: 500px;
+    outline: 0px;
+    background-color: #3A78CB;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.link{
+    width: 40%;
+    margin-left: 40%;
+}
+
+.botao{
+    padding-top: 15px;
+    text-align: center;
+}

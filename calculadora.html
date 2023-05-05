@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista e calculadora para compras</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="shortcut icon" href="icons8_checkout_32.png" type="image/x-icon">
+
+</head>
+<body>
+
+        <header>
+            <h2>Calculadora de Compras</h2>
+            
+        </header>
+
+        <nav>
+            <a class="home" href="index.html">Home</a>
+
+           <p>Veja aqui seus <strong><a style="text-decoration: underline;" href="">Históricos de compras</a></strong></p>
+        </nav>
+
+        <div class="corpo">
+
+            <div class="lista-compras">
+                <input type="text" name="itens" id="itens" style='text-align: center;' placeholder="Digite seu produto...">
+
+
+
+                <input type="number" name="valor-compras" style='text-align: center;' id="valor" placeholder="     Digite o Valor....">
+
+
+                <input type="submit" value="Cadastrar" name="button" id="button">
+            </div>
+            
+          
+            
+                  <input type="button" value="Limpar Carrinho" name="limpar" id="limpar">
+        </div>
+
+    
+          
+               <form>
+                   <table>
+                        <thead class="thead">
+                            <th>Produto</th>
+                            <th>Valor</th>
+                        </thead>
+                   
+                   
+                        <tbody id="lista" class="lista-cadastrada">
+                   
+                        </tbody>
+                   
+                   </table>
+               </form>
+           
+
+       </div>
+
+           
+
+    <div class="total">
+      <h1 id>Total: R$0</h1>
+    </div>
+
+
+    <script src="calc.js"></script>
+</body>
+</html>
