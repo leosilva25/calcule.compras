@@ -5,12 +5,16 @@ document.querySelector('input[type=submit]').addEventListener('click', ()=>{
 
     var produto = document.querySelector('input[name=itens]');
     var preco = document.querySelector('input[name=valor-compras]');
+    var quantidade = document.querySelector('input[name=valor-quantidade]');
+    
 
     items.push({
         nome: produto.value,
-        valor: preco.value   
+        valor: preco.value,
+        quant: quantidade.value   
     }); // push //
 
+    
 
     let listaProdutos = document.querySelector('.lista-cadastrada');
     let soma = 0;
@@ -19,11 +23,13 @@ document.querySelector('input[type=submit]').addEventListener('click', ()=>{
     listaProdutos.innerHTML="";
     items.map(function(val){
 
-        soma+=parseFloat(val.valor);
+        soma+=parseFloat(val.valor) * (val.quant);
         listaProdutos.innerHTML+=`
        
         <td>`+val.nome+`</td>
-        <td>R$ `+val.valor+` </td>
+        <td> `+val.quant+`</td>
+        <td>R$ `+val.valor * val.quant+` </td>
+        
        `
         
     }); // items.map //
@@ -32,6 +38,7 @@ document.querySelector('input[type=submit]').addEventListener('click', ()=>{
     soma = soma.toFixed(2);
     produto.value = "";
     preco.value = "";
+    quantidade.value = "";
 
    
    
@@ -47,6 +54,7 @@ document.querySelector('input[name=limpar]').addEventListener('click' ,()=>{
     items = [];
 
     document.querySelector('.lista-cadastrada').innerHTML = "";
+   
     document.querySelector('.total').innerHTML = "Total: R$0";
 
 });
